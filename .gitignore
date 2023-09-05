@@ -12,7 +12,8 @@
 *.xd
 
 # Avoid your project being littered with annoying .DS_Store files!
-.style.css.map
+style.css
+style.css.map
 .DS_Store
 .prettierignore
 README-template.md
