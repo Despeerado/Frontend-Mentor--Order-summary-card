@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225deg, 100%, 94%);
+}
+
+h1,
+p,
+span {
+  text-align: center;
+}
+
+h1,
+p,
+span,
+a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+p {
+  color: #7280a7;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(245deg, 75%, 52%);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.annual-plan {
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  margin-inline: auto;
+  margin-block-end: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: hsl(225deg, 100%, 98%);
+}
+@media only screen and (max-width: 450px) {
+  .annual-plan {
+    max-width: 250px;
+  }
+}
+
+.order-summary-wrapper {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  border-radius: 1rem;
+  background-color: white;
+  max-width: 450px;
+  width: 100%;
+  -webkit-box-shadow: 65px 39px 72px -35px rgb(114, 128, 167);
+  -moz-box-shadow: 65px 39px 72px -35px rgb(114, 128, 167);
+  box-shadow: 65px 39px 72px -35px rgb(114, 128, 167);
+}
+@media only screen and (max-width: 450px) {
+  .order-summary-wrapper {
+    max-width: 350px;
+  }
+}
+
+.plan-pricing-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-summary-description {
+  line-height: 1.5rem;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.plan-pricing-outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan-pricing-outer img {
+  padding-right: 1rem;
+}
+
+.plan-pricing {
+  display: flex;
+  flex-direction: column;
+}
+.plan-pricing span:nth-child(1) {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.plan-pricing span:nth-child(2) {
+  color: #7280a7;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.payment,
+.cancel {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.payment {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  max-width: 350px;
+  width: 100%;
+  color: white;
+  background-color: hsl(245deg, 75%, 52%);
+  border-radius: 1rem;
+  box-shadow: 13px 14px 16px -9px rgb(114, 128, 167);
+}
+.payment:hover {
+  background-color: #7280a7;
+}
+@media only screen and (max-width: 450px) {
+  .payment {
+    max-width: 250px;
+  }
+}
+
+.cancel:hover,
+.change-plan:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.cancel {
+  margin-bottom: 1rem;
+  color: #7280a7;
+}
+
+.change-plan {
+  -webkit-text-decoration-line: overline;
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
