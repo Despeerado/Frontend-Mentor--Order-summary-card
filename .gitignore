@@ -12,7 +12,7 @@
 *.xd
 
 # Avoid your project being littered with annoying .DS_Store files!
-style.css
+style.scss
 style.css.map
 .DS_Store
 .prettierignore
